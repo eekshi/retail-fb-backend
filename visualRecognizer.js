@@ -99,7 +99,7 @@ module.exports.classifier = function (params, callback) {
                 classifier_ids: ["shoes_1984151857"]
         
             };
-            // console.log('Saved to', filename)  // Saved to /path/to/dest/photo.jpg
+             console.log('Saved to', filename)  // Saved to /path/to/dest/photo.jpg
             visualRecognition.classify(detectFacesParams, (err, res) => {
                 // console.log(detectFacesParams)
         
