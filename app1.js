@@ -1173,7 +1173,7 @@ function toneAnalysis(input) {
 
 }
 
-app.listen(port, function () {
+app.listen(process.env.PORT||80, function () {
     console.log('running on 8000');
 
 
