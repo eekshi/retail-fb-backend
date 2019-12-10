@@ -86,7 +86,7 @@ module.exports.classifier = function (params, callback) {
 
     options = {
         url: params.url,
-        dest: __dirname+'/images/photo.jpg'      // Save to /path/to/dest/photo.jpg
+        dest: 'photo.jpg'      // Save to /path/to/dest/photo.jpg
     }
 
    console.log("options", options)
@@ -95,7 +95,7 @@ module.exports.classifier = function (params, callback) {
         .then(({ filename, image }) => {
             console.log(filename)
             detectFacesParams = {
-                images_file: fs.createReadStream(__dirname+'/images/photo.jpg'),
+                images_file: fs.createReadStream('photo.jpg'),
                 classifier_ids: ["shoes_1984151857"]
         
             };
