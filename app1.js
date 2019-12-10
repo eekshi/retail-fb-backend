@@ -1194,7 +1194,7 @@ function socketImplementation(fbid, msg) {
     console.log("inside socketsimp")
     var options = {
         method: 'POST',
-        uri: 'https://retail-fb-backend.herokuapp.com/getRequest',
+        uri: 'https://retail-agent-backend.herokuapp.com/getRequest',
         body: {
             "fbId": fbid,
             "msg": msg
