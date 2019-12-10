@@ -89,7 +89,7 @@ module.exports.classifier = function (params, callback) {
         dest: __dirname+'/images/photo.jpg'      // Save to /path/to/dest/photo.jpg
     }
 
-   
+   console.log("options", options)
 
     download.image(options)
         .then(({ filename, image }) => {
