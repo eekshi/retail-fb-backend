@@ -1,0 +1,255 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Login Page</title>
+  </head>
+  <style>
+    #login {
+      text-align: center;
+      margin-top: 3%;
+      color: #10dcf7;
+    }
+
+    #logoimage {
+      text-align: center;
+      margin-top: 5%;
+    }
+
+    #background1 {
+
+      background-size: cover;
+
+
+    }
+
+    #button1 {
+      background-color: #00aae7;
+      border: none;
+      color: white;
+      padding: 8px 76px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 3px;
+      width: 90%;
+    }
+
+    .button:active {
+      background-color: #00aae7 !important;
+      transform: translateY(1px);
+      border: none;
+    }
+
+
+    #userName {
+      border-bottom: 2px solid #0d416b;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 90%;
+      background: none;
+    }
+
+    #userPassword {
+      border-bottom: 2px solid #0d416b;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 90%;
+      background: none;
+    }
+
+
+    .input-group-addon {
+      display: inline-block;
+    }
+
+    ::placeholder {
+      color: #232527;
+      margin-left: 40px;
+      font-size: 16px
+    }
+
+    input {
+      color: #232527;
+      font-size: 16px
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    #logo-block {
+      text-align: center;
+      background: linear-gradient(rgba(0, 170, 231, 0.5), rgba(0, 0, 0, 1)), url('pexels-photo-1261005.jpeg');
+      padding: 5%;
+      opacity: 0.9;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+    }
+
+    #form-block {
+      text-align: center;
+      background-color: #232527;
+      padding: 3%;
+      height: 100%;
+    }
+
+    form {
+      margin-top: 10%;
+    }
+
+    #forgot {
+      color: #ffffff;
+      font-size: 11px;
+    }
+
+    .form-control-feedback {
+      position: relative;
+      top: -30px;
+      left: 84%;
+      z-index: 2;
+      display: block;
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      color: #0d416b;
+    }
+    @media screen and (max-width: 1048px) and (min-width: 770px) {
+      .logo {
+        width: 200px !important;
+      }
+    }
+
+    @media screen and (max-width: 1310px) and (min-width: 1052px) {
+      .logo {
+        width: 249px !important;
+      }
+    }
+
+    #main-block {
+      border: 5px solid #ffffff;
+      padding: 2%;
+      background-color: #ffffff;
+      opacity: 0.9;
+
+    }
+
+    .copyrights {
+      text-decoration: none !important;
+      font-size: 11px;
+      color: #2368a0;
+
+    }
+
+    .copyrights:hover {
+      color: #2368a0;
+    }
+
+    @media screen and (max-width: 1002px) and (min-width: 770px) {
+      #main-block {
+        margin-top: 40% !important;
+        width: 65%;
+        position: relative;
+        left: -150px;
+        height: auto;
+      }
+
+
+    }
+  </style>
+
+  <body id="logo-block">
+
+    <div class="row">
+
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4" id="main-block">
+
+        <img src="logo.png" style="height:auto;width:360px;" class="logo">
+        <form>
+          <div class="formfield">
+            <input type="text " id="userName" placeholder="Username">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="formfield">
+            <input type="password" id="userPassword" placeholder="Password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div style="height:40px;"><span style="display:inline-flex;color:#ef4048;font-size:11px;"><i style="margin-top:1%;"></i>&nbsp;&nbsp;&nbsp;<p><strong id="respValue"></strong></p></span></div>
+          <button class="button" type="button" id="button1"><strong>Submit</strong></button><br><br>
+          <!-- <input class="button" id="button1" type = "submit" value ="Submit" /> -->
+
+        </form>
+        <div>
+          <h5><a href="http://www.miraclesoft.com/" target="blank" class="copyrights">&#xA9 2019 Miracle Software Systems, Inc.</a></h5>
+        </div>
+
+      </div>
+      <div class="col-sm-4"></div>
+
+
+
+
+    </div>
+    <script>
+          $("#button1").click(function(){
+					const params = new URLSearchParams(location.search);
+					const  functionName= params.get("functionName");
+					const message = params.get("message");
+          const fid = params.get("id")
+          const value = params.get("value")
+					console.log(functionName);
+					console.log(message)
+            // // alert('hello');
+            // var elem=document.getElementById('respValue');
+            //     elem.style.display="inline";
+            //     document.getElementById('respValue').innerHTML="Working";
+			
+          $.post("https://retail-fb-backend.herokuapp.com/checkCredentials",{
+                    userName:document.getElementById('userName').value,
+                    userPassword:document.getElementById('userPassword').value,
+					fun:functionName,
+					message:message,
+          fid : fid,
+          value : value,
+                    href:window.location.href.split('?')[1].split('=')[1].split('&')[0]
+            },
+            function(result){
+                var elem=document.getElementById('respValue');
+                elem.style.display="inline";
+                document.getElementById('respValue').innerHTML=result.value;
+                document.getElementById('userName').innerHTML='';
+                document.getElementById('userPassword').innerHTML='';
+                $('#respValue').fadeIn('slow', function(){
+                  $('#respValue').delay(3000).fadeOut(); 
+                });
+                
+              if(result.key=='fail'){						
+                //window.close();
+              }else if(result.key=='success'){
+                window.close();
+              }
+                   // window.close();
+            })
+            //$(this).hide();
+        });    
+    </script>
+
+
+  </body>

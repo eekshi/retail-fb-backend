@@ -1,0 +1,23 @@
+{
+  "name": "simplebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cloudant/cloudant": "^4.1.1",
+    "cloudant": "^1.10.0-NOTICE",
+    "express": "^4.16.4",
+    "ibm-watson": "^4.5.4",
+    "image-downloader": "^3.5.0",
+    "jsonwebtoken-refresh": "^5.7.0",
+    "languagedetect": "^1.2.0",
+    "nodemon": "^1.19.1",
+    "request-promise": "^4.2.4",
+    "watson-developer-cloud": "^3.18.1"
+  }
+}
